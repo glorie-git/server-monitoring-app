@@ -6,13 +6,14 @@ import lombok.experimental.SuperBuilder;
 import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Map;
 
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 
 @Data
 @SuperBuilder
-@JsonInclude(NON_NULL) // do not include null variables
+@JsonInclude(NON_NULL) // do not include null variables when returning the JSON
 public class Response {
     protected LocalDateTime timeStamp;
     protected int statusCode;

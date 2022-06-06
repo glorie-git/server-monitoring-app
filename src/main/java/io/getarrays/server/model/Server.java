@@ -25,8 +25,8 @@ public class Server {
     @NotEmpty(message = "IP address cannot be empty or null") // makes sure that the ip address is never empty
     private String ipAddress;
     private String name;
-    private String type;
     private String memory;
+    private String type;
     private String imageUrl;
     private Status status;
 }
