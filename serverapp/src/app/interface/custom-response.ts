@@ -7,5 +7,5 @@ export interface CustomResponse {
     reason: string;
     message: string;
     developerMessage: string;
-    data: { servers?: Server[], server?: Server};
+    data: { servers?: Server[], server?: Server}; // We won't get both of them at the same time
 }
