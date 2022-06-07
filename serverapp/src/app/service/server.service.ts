@@ -2,9 +2,9 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError} from 'rxjs';
 import { tap, catchError} from 'rxjs/operators';
-import { Status } from 'src/enum/status.enum';
-import { CustomResponse } from 'src/interface/custom-response';
-import { Server } from 'src/interface/server';
+import { Status } from 'src/app/enum/status.enum';
+import { CustomResponse } from 'src/app/interface/custom-response';
+import { Server } from 'src/app/interface/server';
 
 @Injectable({ providedIn: 'root'})
 export class ServerService {
