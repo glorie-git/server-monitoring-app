@@ -31,7 +31,7 @@ public class ServerApplication {
 					"http://localhost:8080/server/image/server3.png", SERVER_UP));
 			serverRepo.save(new Server(null, "192.168.1.161", "Windows 11", "8 GB", "Home Computer",
 					"http://localhost:8080/server/image/server2.png", SERVER_DOWN));
-			serverRepo.save(new Server(null, "192.124.1.151", "Windows 11 (Gaming)", "64 GB", "Gaming PC",
+			serverRepo.save(new Server(null, "192.124.1.151", "Windows 10 (Gaming)", "64 GB", "Gaming PC",
 					"http://localhost:8080/server/image/server4.png", SERVER_UP));
 		};
 	}
