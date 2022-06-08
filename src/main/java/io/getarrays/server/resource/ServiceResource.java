@@ -13,6 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import static io.getarrays.server.enumeration.Status.SERVER_UP;
 import static org.springframework.http.HttpStatus.CREATED;
@@ -26,7 +27,8 @@ public class ServiceResource {
     private final ServerServiceImplementation serverService; // dependency injection
 
     @GetMapping("/list")
-    public ResponseEntity<Response> getServers() {
+    public ResponseEntity<Response> getServers() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(3);
         return ResponseEntity.ok (
                 Response.builder()
                         .timeStamp(LocalDateTime.now())

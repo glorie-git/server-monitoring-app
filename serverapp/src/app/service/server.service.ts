@@ -1,3 +1,5 @@
+// All the functions we need to make a HTTP request
+
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError} from 'rxjs';
@@ -9,7 +11,7 @@ import { Server } from 'src/app/interface/server';
 @Injectable({ providedIn: 'root'})
 export class ServerService {
 
-  private readonly apiUrl = 'any';
+  private readonly apiUrl = 'http://localhost:8080';
 
   constructor( private http: HttpClient) { } // dependency injection
 
