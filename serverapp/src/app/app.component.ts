@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { catchError, map, Observable, of, startWith } from 'rxjs';
+import { BehaviorSubject, catchError, map, Observable, of, startWith } from 'rxjs';
 import { DataState } from './enum/data-state.enum';
 import { Status } from './enum/status.enum';
 import { AppState } from './interface/app-state';
@@ -16,6 +16,9 @@ export class AppComponent implements OnInit {
   constructor(private seververService: ServerService) {}
   readonly DataState = DataState;
   readonly Status = Status;
+  private filterSubject = new BehaviorSubject<string>('');
+  filterStatus$ = this.filterSubject.asObservable();
+  // Google rjs observables
 
   // Reactive approach
   ngOnInit(): void {
