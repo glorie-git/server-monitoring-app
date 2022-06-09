@@ -87,19 +87,40 @@ h2 {
 table {
     width: 100%;
     margin: 1rem auto;
+    font-size: .8rem;
+    text-align: left;
     /* border-top: 1px solid black; */
 }
 
 tbody {
     border-top: 1px solid black;
+    /* border: 5px solid red; */
+    /* margin: 1rem auto; */
+    /* padding: 1rem auto; */
 }
-
+/* 
 td {
-    text-align: center;
+    border: 10px solid yellow;
+} */
+
+tr {
+    color: rgb(89, 88, 88);
+    /* border: 8px solid yellow; */
 }
 
-tbody tr {
-    color: rgb(181, 178, 178);
+.badge-success {
+    background-color: green;
+}
+
+.badge-danger {
+    background-color: rgb(198, 2, 2);
+}
+
+.badge-danger, .badge-success {
+    color: white;
+    border-radius: 5px;
+    font-size: .6rem;
+    padding: 2px;
 }
 
 tbody .delete {
