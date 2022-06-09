@@ -1,4 +1,6 @@
 // All the functions we need to make a HTTP request
+// Can be generated using:
+// ng g service service/server
 
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -15,7 +17,7 @@ export class ServerService {
 
   constructor( private http: HttpClient) { } // dependency injection
 
-  // Procedural approach
+  //  *** Showcasing procedural approach *** //
   // getServers(): Observable<CustomResponse> {
   //   return this.http.get<CustomResponse>(`http://localhost:8080/server/list`);
   // }
@@ -27,7 +29,7 @@ export class ServerService {
     catchError(this.handleError)
   )
 
-  save$ = (server: Server) => <Observable<CustomResponse>> // observable used to retrieve a list of all the servers
+  save$ = (server: Server) => <Observable<CustomResponse>>
   this.http.post<CustomResponse>(`${this.apiUrl}/server/save`, server)
   .pipe (
     tap(console.log),

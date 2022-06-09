@@ -21,12 +21,12 @@ export class AppComponent implements OnInit {
       map(response => {
         return { dataState: DataState.LOADED_STATE, appData: response}
       }),
-      startWith({ dataState: DataState.LOADING_STATE, appData: null }),
+      startWith({ dataState: DataState.LOADING_STATE}),
       catchError((error: string) => {
-        return of({ dataState: DataState.ERROR_STATE, error: error })
+        return of({ dataState: DataState.ERROR_STATE, error })
       })
     );
   }
 }
-  // title = 'serverapp';
+  
 
