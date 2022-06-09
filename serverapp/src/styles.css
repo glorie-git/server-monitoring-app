@@ -1,1 +1,163 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+
+* {
+    /* border: 1px solid red; */
+}
+
+.table-title {
+    background-color: rgb(73, 114, 180);
+    /* border: 5px solid yellow; */
+    /* width: 50%; */
+    /* margin: 1rem auto; */
+    padding: 1rem;
+    /* flex-direction: column; */
+}
+
+.table-title .row {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.container-x1 {
+    background-color: white;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.modal {
+    background-color: white;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.table-title .row .col-sm-6 {
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.table-title .row .col-sm-6:nth-child(2) {
+    justify-content: space-around;
+    /* justify-items: ; */
+    /* background-color: yellow; */
+}
+
+.table-title .row .col-sm-6 .btn {
+    border: 0;
+    border-radius: 2px;;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: aqua; */
+    display: inline;
+}
+
+.col-sm-6 .btn {
+    width: 100px;
+    height: 40px;
+    /* background-color: aqua; */
+    font-size: 0.7rem;
+}
+
+.btn-primary {
+    background-color: rgb(60, 198, 252);
+}
+
+.btn-success {
+    background-color: rgb(34, 197, 34);
+}
+
+.btn-info {
+    background-color: rgb(0, 209, 209);
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin: 1rem auto;
+    /* border-top: 1px solid black; */
+}
+
+tbody {
+    border-top: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr {
+    color: rgb(181, 178, 178);
+}
+
+tbody .delete {
+    color: red;
+}
+
+.alert-danger {
+    background-color: rgba(255, 0, 0, 0.145);
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+/* body {
+    background-color: #edf1f5;
+    margin-top: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color:#fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 0;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.table-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    flex-direction: column;
+    background-color: rgb(73, 114, 180);
+}
+
+.container-x1 {
+    background-color: white;
+}
+
+.modal {
+    background-color: white;
+}
+
+h2 {
+    color: white;
+} */
+
