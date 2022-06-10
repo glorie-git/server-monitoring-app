@@ -16,7 +16,8 @@
                             <span>New Server</span>
                         </a>
                         <span>
-                            <select name="status" class="btn btn-info">
+                            <!-- Had to add import { FormsModule, ReactiveFormsModule } from '@angular/forms'; -->
+                            <select (ngModelChange)="filterServers($event)" ngModel="ALL" name="status" class="btn btn-info">
                                 <option value="ALL">ALL</option>
                                 <option value="SERVER_UP">SERVER UP</option>
                                 <option value="SERVER_DOWN">SERVER DOWN</option>
