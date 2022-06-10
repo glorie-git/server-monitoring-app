@@ -105,6 +105,10 @@ td {
     border: 10px solid yellow;
 } */
 
+.modal {
+    display: none;
+}
+
 tr {
     color: rgb(89, 88, 88);
     /* border: 8px solid yellow; */
