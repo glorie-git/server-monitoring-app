@@ -3,7 +3,7 @@
 
 spring:
   datasource:
-    password: aRm202404
+    password: mypassword
     url: jdbc:mysql://localhost:3306/serverdb
     username: root
   jpa:
