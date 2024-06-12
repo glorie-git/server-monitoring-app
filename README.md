@@ -18,9 +18,12 @@ The Server App is a web based that montiors your servers.
 You will need to run the Angular Live Development Server and Spring boot server
 
 To run the Angular Live Development Server:
-- Nagivate to serverapp
-- run `ng serve`
+- Make sure you have Angular CLI installed (https://github.com/glorie-git/server/)
+- From root directory run `cd serverapp`
+- Run `npm install`
+- Run `ng serve`
 
 Spring boot server:
-- Navigate to root folder-
-- run `mvn spring-boot:run`
+Before running Spring Boot make sure you have install MySQL locally.
+- Navigate to root folder
+- Run `./mvn spring-boot:run`
