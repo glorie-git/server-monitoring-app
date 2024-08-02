@@ -1,4 +1,4 @@
-# server
+# Server Monitoring App
 Server service implemented using Spring Boot, Angular and Java in the IntelliJ IDE
 
 Followed a tutorial by [Amigoscode](https://youtu.be/8ZPsZBcue50)
