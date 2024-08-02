@@ -1,8 +1,6 @@
 # Server Monitoring App
 Server service implemented using Spring Boot, Angular and Java in the IntelliJ IDE
 
-Followed a tutorial by [Amigoscode](https://youtu.be/8ZPsZBcue50)
-
 <img width="1440" alt="UI Image 1" src="https://user-images.githubusercontent.com/70677768/173446760-a77bfbb4-afc9-46db-af6e-143221400282.png">
 
 The Server App is a web based that montiors your servers. 
@@ -27,3 +25,6 @@ Spring boot server:
 Before running Spring Boot make sure you have install MySQL locally.
 - Navigate to root folder
 - Run `./mvn spring-boot:run`
+
+## Credits
+[Amigoscode](https://youtu.be/8ZPsZBcue50)
